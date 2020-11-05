@@ -1,0 +1,174 @@
+:root {
+  --light: 300;
+  --semi-bold: 600;
+  --bold: 700;
+  --blue: hsl(223, 87%, 63%);
+  --pale-blue: hsl(223, 100%, 88%);
+  --light-red: hsl(354, 100%, 66%);
+  --gray: hsl(0, 0%, 59%);
+  --very-dark-blue: hsl(209, 33%, 12%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  min-height: 100vh;
+  max-width: 1440px;
+  padding: 84px 36px 36px;
+  margin: 0 auto;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.logo {
+  margin-bottom: 29px;
+  width: 50px;
+}
+
+h1 {
+  color: var(--gray);
+  margin-bottom: 16px;
+  font-size: clamp(22px, 4vw, 48px);
+}
+
+h1 span {
+  color: var(--very-dark-blue);
+}
+
+.heading p {
+  color: var(--very-dark-blue);
+  margin-bottom: 31px;
+  font-size: clamp(12px, 2vw, 20px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+input {
+  width: 100%;
+  padding: 15px 0 15px 25px;
+  margin-bottom: 10px;
+  border: 0.1rem solid var(--pale-blue);
+  border-radius: 5rem;
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--pale-blue);
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+}
+
+form.error input {
+  border-color: var(--light-red);
+}
+
+form.error .error-text {
+  color: var(--light-red);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+button {
+  background-color: var(--blue);
+  color: #fff;
+  font-weight: var(--semi-bold);
+  padding: 15px 17px;
+  border: 0.1rem solid var(--blue);
+  border-radius: 5rem;
+  outline: none;
+  cursor: pointer;
+}
+
+.dashboard {
+  margin-bottom: 60px;
+}
+
+footer ul {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+footer li {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  text-align: center;
+  border: 1px solid var(--blue);
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer li a {
+  color: var(--blue);
+}
+
+footer i {
+  font-size: 25px;
+}
+
+footer p {
+  text-align: center;
+  color: var(--gray);
+}
+
+@media (min-width: 900px) {
+  .logo {
+    width: 70px;
+  }
+  form {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  form input {
+    margin-bottom: 10px;
+    margin-right: 16px;
+    width: 421px;
+  }
+  form.error .error-text {
+    text-align: left;
+    margin-bottom: 0;
+    margin-left: 30px;
+  }
+
+  form button {
+    width: 200px;
+    height: 48px;
+  }
+
+  .dashboard {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+  }
+}
