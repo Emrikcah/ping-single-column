@@ -109,30 +109,35 @@ button {
   margin-bottom: 60px;
 }
 
-footer ul {
+footer{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   list-style: none;
-  text-align: center;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
 }
 
-footer li {
+.social-list{
+  margin-bottom: 30px;
+}
+
+footer  a {
+  position: relative;
+  display: inline-block;
+  color: var(--blue);
   width: 50px;
   height: 50px;
-  margin: 0 10px;
-  text-align: center;
   border: 1px solid var(--blue);
   border-radius: 50%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-
-footer li a {
-  color: var(--blue);
-}
-
-footer i {
+  line-height: 50px;
+  text-align: center;
   font-size: 25px;
+margin: 0 10px;
+}
+
+footer  a:hover {
+  color: #fff;
+  background-color: var(--blue);
 }
 
 footer p {
