@@ -17,6 +17,7 @@
 
 body {
   font-family: "Libre Franklin", sans-serif;
+  
 }
 
 img {
@@ -44,10 +45,12 @@ h1 {
   color: var(--gray);
   margin-bottom: 16px;
   font-size: clamp(22px, 4vw, 48px);
+  font-weight: var(--light);
 }
 
 h1 span {
   color: var(--very-dark-blue);
+  font-weight: var(--bold);
 }
 
 .heading p {
@@ -114,7 +117,7 @@ footer{
   align-items: center;
   flex-direction: column;
   list-style: none;
-  /* margin-bottom: 40px; */
+  
 }
 
 .social-list{
@@ -125,11 +128,11 @@ footer  a {
   position: relative;
   display: inline-block;
   color: var(--blue);
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   border: 1px solid var(--blue);
   border-radius: 50%;
-  line-height: 50px;
+  line-height: 35px;
   text-align: center;
   font-size: 25px;
 margin: 0 10px;
@@ -145,9 +148,13 @@ footer p {
   color: var(--gray);
 }
 
+.fab{
+  font-size: 20px;
+}
+
 @media (min-width: 900px) {
   .logo {
-    width: 70px;
+    width: 80px;
   }
   form {
     flex-direction: row;
